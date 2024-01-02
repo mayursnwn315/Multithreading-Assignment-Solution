@@ -1,0 +1,42 @@
+﻿1.What do you mean by Multithreading? Why is it important?
+
+
+Ans-Multithreading is a programming concept where multiple threads (smaller units of a process) execute independently within a single program. It is important because it allows concurrent execution of tasks, improving program performance by utilizing the available CPU resources more efficiently.
+
+
+2.What are the benefits of using Multithreading?
+
+
+Ans-Benefits of multithreading include improved performance, responsiveness, and resource utilization. It allows for parallel execution of tasks, better handling of background processes, and can lead to more efficient use of modern multi-core processors.
+
+
+3.What is a Thread in Java?
+
+
+Ans-In Java, a thread is the smallest unit of execution within a process. It represents a separate path of execution, allowing concurrent execution of code. Java threads are instances of the Thread class or objects that implement the Runnable interface.
+
+
+4.What are the two ways of implementing threads in Java?
+
+
+Ans-In Java, threads can be implemented by extending the Thread class or by implementing the Runnable interface. Extending the Thread class involves creating a new class that extends Thread, while implementing Runnable requires creating a class that implements the Runnable interface and then passing an instance of this class to a Thread constructor.
+
+
+5.What's the difference between thread and process?
+
+
+Ans-A thread is a lightweight unit of a process, executing independently with its own program counter, stack, and register set. Threads within the same process share the same memory space.
+A process, on the other hand, is a self-contained unit of execution with its own memory space, resources, and state. Processes are isolated from each other.
+
+
+6.How can we create daemon threads?
+
+
+Ans-Daemon threads in Java can be created by calling the setDaemon(true) method on a thread object before starting it. Daemon threads are background threads that do not prevent the program from terminating if they are still running.
+
+
+7.What are the wait() and sleep() methods?
+
+
+Ans-The wait() method is used for causing the current thread to wait until another thread invokes the notify() or notifyAll() method on the same object.
+The sleep() method is used to pause the execution of the current thread for a specified amount of time. It does not release any locks and is typically used for introducing delays.
